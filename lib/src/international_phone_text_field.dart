@@ -275,7 +275,7 @@ class _InternationalPhoneTextFieldState
                                       .maskText(
                                     actualMaskText,
                                   );
-                                  hintController.text = finalMaskText.replaceAll("0", "_").replaceAll(" ", "-");
+                                  hintController.text = finalMaskText);
                                 } else if (value.text
                                     .replaceAll(nonWidthSpace, "")
                                     .isNotEmpty) {
