@@ -36,7 +36,7 @@ class CountryTitle extends StatelessWidget {
                     'assets/flags/${state.selectedCountryCode.countryCode.toLowerCase()}.png',
                     height: 20,
                     width: 28,
-                    fit: BoxFit.fit,
+                    fit: BoxFit.fill,
                     errorBuilder: (context, error, stackTrace) =>
                         WrongFlagContainer(),
                   ),
