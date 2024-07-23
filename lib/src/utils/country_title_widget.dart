@@ -26,11 +26,7 @@ class CountryTitle extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       behavior: HitTestBehavior.opaque,
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: inOneLine ? 0 : 16).copyWith(
-          left: inOneLine ? 16 : 0,
-        ),
-        child: AnimatedCrossFade(
+      child: AnimatedCrossFade(
           firstChild: Row(
             children: [
               if (state.selectedCountryCode.countryCode.isNotEmpty)
@@ -80,7 +76,7 @@ class CountryTitle extends StatelessWidget {
               : CrossFadeState.showSecond,
           duration: Duration(milliseconds: 400),
         ),
-      ),
+      
     );
   }
 }
