@@ -260,7 +260,7 @@ class _InternationalPhoneTextFieldState
                                           state.selectedCountryCode.phoneMask
                                                   .length -
                                               phoneLength,
-                                          (index) => "0")
+                                          (index) => "_")
                                       .toString()
                                       .replaceAll("[", "")
                                       .replaceAll("]", "")
