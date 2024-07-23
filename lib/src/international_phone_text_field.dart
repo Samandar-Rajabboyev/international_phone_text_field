@@ -191,12 +191,6 @@ class _InternationalPhoneTextFieldState
                       style: widget.style,
                       cursorColor: widget.cursorColor,
                     ),
-                    Container(
-                      width: 1,
-                      margin: EdgeInsets.symmetric(horizontal: 12),
-                      height: 30,
-                      color: widget.dividerColor,
-                    ),
                     Flexible(
                       fit: FlexFit.loose,
                       child: Stack(
