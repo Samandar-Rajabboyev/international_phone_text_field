@@ -172,6 +172,7 @@ class _InternationalPhoneTextFieldState
                 ],
                 Row(
                   children: [
+                    const SizedBox(width: 8),
                     if (widget.inOneLine) ...[
                       CountryTitle(
                         state: state,
