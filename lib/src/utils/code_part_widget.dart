@@ -40,6 +40,8 @@ class CodePartWidget extends StatelessWidget {
                 decoration: InputDecoration(
                   counterText: "",
                   border: InputBorder.none,
+                  isDense: true,
+                  contentPadding: EdgeInsets.symmetric(vertical: 12),
                   disabledBorder: InputBorder.none,
                   enabledBorder: InputBorder.none,
                   focusedBorder: InputBorder.none,

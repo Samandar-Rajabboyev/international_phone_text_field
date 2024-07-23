@@ -208,6 +208,8 @@ class _InternationalPhoneTextFieldState
                             decoration: InputDecoration(
                               counterText: "",
                               border: InputBorder.none,
+                              isDense: true,
+                              contentPadding: EdgeInsets.symmetric(vertical: 12),
                               disabledBorder: InputBorder.none,
                               enabledBorder: InputBorder.none,
                               focusedBorder: InputBorder.none,
@@ -284,6 +286,8 @@ class _InternationalPhoneTextFieldState
                                   decoration: InputDecoration(
                                     enabled: false,
                                     counterText: "",
+                                    isDense: true,
+                                    contentPadding: EdgeInsets.symmetric(vertical: 12),
                                     hintText: widget.notFoundNumberMessage,
                                     hintStyle: widget.hintStyle,
                                     border: InputBorder.none,
