@@ -34,8 +34,8 @@ class CountryTitle extends StatelessWidget {
                   borderRadius: BorderRadius.circular(3),
                   child: Image.asset(
                     'assets/flags/${state.selectedCountryCode.countryCode.toLowerCase()}.png',
-                    height: 18,
-                    width: 34,
+                    height: 16,
+                    width: 24,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) =>
                         WrongFlagContainer(),
