@@ -38,11 +38,11 @@ class CountryTitle extends StatelessWidget {
                     width: 28,
                     fit: BoxFit.fill,
                     errorBuilder: (context, error, stackTrace) =>
-                        WrongFlagContainer(),
+                        SvgPicture.asset('assets/ic_globe.svg'),
                   ),
                 )
               else
-                WrongFlagContainer(),
+                SvgPicture.asset('assets/ic_globe.svg'),
               if (!inOneLine) ...[
                 SizedBox(width: 8),
                 Text(
@@ -58,7 +58,7 @@ class CountryTitle extends StatelessWidget {
             ],
           ),
           secondChild: inOneLine
-              ? WrongFlagContainer()
+              ? SvgPicture.asset('assets/ic_globe.svg')
               : Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
